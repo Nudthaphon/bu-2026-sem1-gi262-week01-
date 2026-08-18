@@ -59,6 +59,26 @@ public class Workshop : MonoBehaviour
     public bool as07IsPaid;
     public void As07_VerifyIdentityExample()
     {
+        if (as07Username == "user" && as07Password == "user123")
+        {
+            Debug.Log("You have accessed");
+            if (as07IsPaid) 
+            {
+                Debug.Log("VIP member");
+            }
+            else 
+            {
+                Debug.Log("Free member");
+            }
 
+            if (as07Username > 18)
+            {
+                Debug.Log("You have access to exclusive content");
+            }
+        }
+        else
+        {
+            Debug.Log("You ");
+        }
     }
 }
